@@ -9,7 +9,7 @@ import SignUp from "./userlogin/signUp";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter   >
       <Navbar />
 
       <Routes>
