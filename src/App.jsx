@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./navbar/Navbar";
 import Home from "./components/Home";
 import Card from "./components/Card";
@@ -9,7 +9,7 @@ import SignUp from "./userlogin/signUp";
 
 function App() {
   return (
-    <BrowserRouter   >
+    <HashRouter>
       <Navbar />
 
       <Routes>
@@ -19,9 +19,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
